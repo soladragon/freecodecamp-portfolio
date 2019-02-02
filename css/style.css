@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto:900');
+body {
+    background-color: rgb(230, 230, 230);
+}
+.jumbotron {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: dodgerblue;
+    margin-bottom: 0px;
+    height: 100vh;
+}
+.jumbotron h1 {
+font-size: 90px;
+margin-top: 100px;
+}
+
+.navbar {
+    display: flex;
+align-items: center; /* align vertical */
+background-color: white;
+flex-direction: row;
+position: sticky;
+top: 0;
+}
+
+.fa-github-square {
+    font-size: 40px;
+}
+
+.navbaritems {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* align vertical */
+}
+
+nav ul li {
+ padding: 10px;
+}
+
+.navright {
+    margin-left:auto;
+}
+.link-toggle {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbaritems {
+        flex-direction: column;
+        display: none;
+    }
+    .navbar {
+    flex-direction: column;
+    }
+    .navright {
+        margin-left:0;
+    }
+    nav ul li {
+        padding: 3px;
+       }
+
+    .link-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+      }
+      #logo {
+        align-self: flex-start;  
+      }
+      .toggle-show {
+          display: flex;
+      }
+
+}
+
+
+
+.mydiv {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px;
+    font-size: 40px;
+}
+
+.container{
+display: flex;
+flex-direction: column;
+width: 80%;
+padding-right: 15px;
+padding-left: 15px;
+}
+.content{
+    width: 100%;
+display:flex;
+align-items: center;
+flex-direction: row;
+}
+.sidebox {
+width: 30%;
+height: 200px;
+background-color: rgb(100, 61, 61);
+margin-right: auto;
+margin-left: auto;
+}
+
+#education {
+background-color: #97A3B7;
+text-align: center;
+padding-top:50px;
+padding-bottom: 50px;
+}
+#educationtitle {
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+
+.educationbox {
+flex: 1;
+background-color: white;
+margin: 10px;
+text-align: start;
+padding: 10px;
+}
+.educationbox h4 {
+padding: 10px;
+text-align: center;
+}
+
+.educationcontainer {
+    display: flex;
+flex-direction: row;
+}
+@media only screen and (max-width: 768px) {
+    .educationcontainer {
+    flex-direction: column;
+    }
+}
+
+#welcome{
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+    padding: 50px;
+}
+#welcome h2{
+padding-bottom: 80px;
+padding-top: 20px;
+}
+#welcome p{
+font-size: 20px;
+    }
+
+    #projects {
+        display: grid;
+        background-color: #2196F3;
+        padding: 10px;
+        grid-template-columns: repeat( auto-fit, minmax(200px, 200px) );
+        grid-gap: 50px;
+        justify-content: center;
+    }
+
+    .project-tile {
+        background-color: rgba(168, 154, 154, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        font-size: 30px;
+        text-align: center;
+        height: 200px;
+        width: 200px;
+        transition: all .2s ease-in-out;
+        opacity: 0.9;
+      }
+.project-tile:hover { 
+    transform: scale(1.1);
+    opacity: 1;
+}
+      .myprojects {
+        background-color: #2196F3;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+      }
+
+      #projecttitle {
+        color: white;
+        font-size: 40px;
+        padding: 20px;
+        padding-bottom: 100px;
+    }
+
+    #item1 {
+        background-image: url("/portfolio-freecodecamp/img/solaart.jpg");
+    }
+    #item2 {
+        background-image: url("/portfolio-freecodecamp/img/tomforest.jpg");
+    }
+    #item3 {
+        background-image: url("/portfolio-freecodecamp/img/veggieblog.jpg");
+    }
+
+
+#sitefooter{
+    height: 50px;
+    background-color: white;
+}
